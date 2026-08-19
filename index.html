@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>🌈 Creative Image Gallery</h1>
+
+        <p>Responsive HTML • CSS • JavaScript Gallery</p>
+
+    </header>
+
+    <!-- Category Buttons -->
+
+    <section class="filter">
+
+        <button onclick="filterImages('all')" class="active">
+            All
+        </button>
+
+        <button onclick="filterImages('nature')">
+            🌿 Nature
+        </button>
+
+        <button onclick="filterImages('city')">
+            🏙 City
+        </button>
+
+        <button onclick="filterImages('animals')">
+            🐼 Animals
+        </button>
+
+    </section>
+
+    <!-- Gallery -->
+
+    <section class="gallery">
+
+        <div class="image nature">
+            <img src="c:\Users\user\OneDrive\Desktop\Image_Gallery\image1.jpeg">
+            <div class="overlay">
+                <h3>Nature</h3>
+            </div>
+        </div>
+
+        <div class="image city">
+            <img src="c:\Users\user\OneDrive\Desktop\Image_Gallery\image4.jpeg">
+            <div class="overlay">
+                <h3>City Life</h3>
+            </div>
+        </div>
+
+        <div class="image animals">
+            <img src="c:\Users\user\OneDrive\Desktop\Image_Gallery\image7.jpeg">
+            <div class="overlay">
+                <h3>Animals</h3>
+            </div>
+        </div>
+
+        <div class="image nature">
+            <img src="c:\Users\user\OneDrive\Desktop\Image_Gallery\image8.jpeg">
+            <div class="overlay">
+                <h3>Mountain</h3>
+            </div>
+        </div>
+
+        <div class="image city">
+            <img src="c:\Users\user\OneDrive\Desktop\Image_Gallery\image5.jpeg">
+            <div class="overlay">
+                <h3>Night City</h3>
+            </div>
+        </div>
+
+        <div class="image animals">
+            <img src="c:\Users\user\OneDrive\Desktop\Image_Gallery\image2.jpeg">
+            <div class="overlay">
+                <h3>Wildlife</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Lightbox -->
+
+    <div id="lightbox">
+
+        <span class="close">&times;</span>
+
+        <button id="prev">&#10094;</button>
+
+        <img id="lightbox-img">
+
+        <button id="next">&#10095;</button>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>Designed by Darshan | Internship Project 2026</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
